@@ -72,11 +72,11 @@ long long fastPower(int b,int p,int mod){
 ## Binary Power recursive with mod
 
 ```cpp
-long long fast_power(long long a,long long b,long long mod){
-    if(b==0)return 1;
-    long long temp= fast_power(a,b/2,mod);
-    long long res=(temp*temp)%mod;
-    if(b%2)res=(res*a)%mod;
+long long fast_power(long long a, long long b, long long mod) {
+    if (b == 0)return 1;
+    long long temp = fast_power(a, b / 2, mod);
+    long long res = ((temp % mod) * (temp % mod)) % mod;
+    if (b % 2)res = ((res % mod) * (a % mod)) % mod;
     return res;
 }
 ```
