@@ -16,7 +16,7 @@ void print_edges(Graph &graph){
 
 ---
 
-### another way to represent edges
+### another way to represent graph with edges
 
 ```cpp
 typedef vector<vector<int>> Graph;
