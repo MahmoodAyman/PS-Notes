@@ -15,6 +15,21 @@ long long nCr(long long n,long long r){
 }
 ```
 
+for more clearity
+```cpp
+long long nCr(long long n,long long r){
+    long long ans=1,r_factorial=1;
+    for (long long i=n-r+1;i<=n;i++){
+        ans*=i;
+        if(ans %r_factorial==0 && r_factorial<=r){ // divide by r while possible 
+            ans/=r_factorial;
+            r_factorial++;
+        }
+    }
+    return ans;
+}
+```
+
 --- 
 
 ### NpR without factorial function: 
