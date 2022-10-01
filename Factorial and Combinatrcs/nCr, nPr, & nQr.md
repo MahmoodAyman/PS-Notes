@@ -64,3 +64,20 @@ long long nQr(long long n,long long r){
     return ans;
 }
 ```
+
+if you are confused you can just calculate the npr and divide it by r! 
+
+```cpp
+long long nPr(long long n,long long r){
+  long long ans=1;
+  for (int i=n-r+1;i<=n;i++){
+    ans*=i;
+  }
+    return ans;
+}
+int main(){
+  long long n,r;
+  cin>>n>>r;
+  cout<<nPr(n,r)/r<<endl;
+}
+```
