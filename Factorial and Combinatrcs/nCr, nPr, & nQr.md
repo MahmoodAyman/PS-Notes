@@ -15,7 +15,7 @@ long long nCr(long long n,long long r){
 }
 ```
 
-for more clearity
+for more clarity
 ```cpp
 long long nCr(long long n,long long r){
     long long ans=1,r_factorial=1;
