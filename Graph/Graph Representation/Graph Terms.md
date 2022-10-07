@@ -66,6 +66,18 @@ see the code for [weighted undirected graph](/Graph/Graph%20Representation/Undir
 
 and [weighted directed graph](/Graph/Graph%20Representation/Directed.md/#add-directed-weighted)
 
+## Adjacency list
+
+is a collection of unordered lists used to represent a graph 
+
+Each unorder list describes the set of neighbors of a particular node or vertex
+
+## Adjacency Matrix
+this is also the way to represent a graph but this time we use a matrix to represent the graph
+the length of matrix is (n * n) where n is the number of nodes in the graph 
+
+[representation of graph](/Graph/Graph%20Representation/Graph%20Representation.md)
+
 ## Tree
 
 a tree is an undirected graph in which any two nodes are connected to each other by exactly one path and there is no cycles **(acyclic)**
