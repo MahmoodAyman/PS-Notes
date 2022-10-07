@@ -1,24 +1,11 @@
-## Edges:
 
-```cpp
+//## Edges:
+#include <bits/stdc++.h>
+using namespace std;
 typedef vector<pair<int,pair<int,int>>> Graph;
 
-void add_edges(Graph &graph,int from,int to ,int cost){
-graph.push_back({cost,{from,to}});
-}
-void print_edges(Graph &graph){
-    int edges=graph.size();
-    for(int i=0;i<edges;i++){
-        cout<<graph[i].second.first<<" "<<graph[i].second.second<<" "<<graph[i].first<<endl;
-    }
-}
-```
+// another way to represent graph with edges
 
----
-
-### another way to represent graph with edges
-
-```cpp
 typedef vector<vector<int>> Graph;
 
 void add_undirected(Graph &g, int from, int to) {
@@ -39,4 +26,3 @@ void print_graph(Graph &g){
         cout<<endl;
     }
 }
-```
