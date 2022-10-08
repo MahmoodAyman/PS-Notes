@@ -35,7 +35,15 @@ int main(){
 ---
 
 
+## Adjacency list
+```cpp
+vector<int>adj[100];
+```
 
+## Adjacency Matrix
+```cpp
+int adj[100][100];
+```
 
 
 ### Print Graph:
