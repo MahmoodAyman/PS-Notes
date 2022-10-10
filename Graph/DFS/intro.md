@@ -12,7 +12,6 @@ if you have array and you iterate over all it’s elements that means you traver
 ---
 
  
-
 ### pseudo code:
 
 DFS(node)
@@ -25,6 +24,20 @@ DFS(node)
 - pick another edge if available and it’s end hasn’t been **visited**
 
 ---
+### DFS Basic code:
+
+```cpp
+vector<bool> visited;
+vector<vector<int>> adj;
+void DFS(int node){
+    visited[node] = true;
+    for(auto child : adj[node]){
+        if(!visited[child]){
+            DFS(child);
+        }
+    }
+}
+```
 
 ### reachability problem
 
