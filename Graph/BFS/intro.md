@@ -42,8 +42,9 @@ given unweighted directed graph and for every node **S** list all of the nodes t
 
 this is the code to calculate the shortest path from a node to all other nodes in the graph
 ```cpp
+#define oo -1  // just put -1 instead of oo :"D
 vector<int>BFS(vector<vector<int>>adjList,int st_node){
-    vector<int> shortest_path(adjList.size(), 00);
+    vector<int> shortest_path(adjList.size(), oo);
     queue<pii> q; // nodes and it's level
     q.push({st_node, 0});
     shortest_path[st_node] = 0; // the level of start node
@@ -52,7 +53,7 @@ vector<int>BFS(vector<vector<int>>adjList,int st_node){
         q.pop();
         int cur_node = p.first, cur_level = p.second;
         for(int neighbour:adjList[cur_node]){// add neighbours of nodes
-            if(shortest_path[neighbour]==00){ // never visited yet
+            if(shortest_path[neighbour]==oo){ // never visited yet
                 q.push({neighbour, cur_level + 1});
                 shortest_path[neighbour] = cur_level + 1;
             }
