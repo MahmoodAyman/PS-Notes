@@ -40,6 +40,7 @@ void linear_Sieve() {
         }
 
 }
+}
 ```
 
 linear sieve will iterate over the number one time only and also will iterate over numbers less than max value yo wan
