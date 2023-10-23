@@ -38,3 +38,6 @@ st=stack<int>(); // this is to clear stack elements
     
 
 ---
+
+
+## Monotonic Stack 

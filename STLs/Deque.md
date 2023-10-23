@@ -3,7 +3,7 @@
 I call it JOKER  of STLs it can do most of things other containers do 
 
 - you have random access
-- you can push back or push front into it
+- you can push back and push front into it
 - you can pop back and pop front from it
 
 ```cpp
