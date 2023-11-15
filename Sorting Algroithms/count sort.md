@@ -87,10 +87,10 @@ this time will create the same freq array but will make accumulation to the freq
 - now the point is for example : 
 9 has freq 3 starting at position 7 . // in zero-based it will be 6
 - array nums =  
+
 0  1  2  3  4  5  6
 
 9  5  3  9  5  9  7
-
     - loop on the array starting from last element : i = 6
     output[freq[nums[i]] - 1] 
     nums[i] = 7 & freq[nums[i]] = 4 
@@ -112,7 +112,6 @@ this time will create the same freq array but will make accumulation to the freq
         | index | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
         | --- | --- | --- | --- | --- | --- | --- | --- |
         | value |  |  |  | 7 |  |  | 9 |
- 
     - **loop i = 4**
     nums[i] = 5 & freq[nums[i]] = 3
     output[3 -1] = 5; 
@@ -139,7 +138,7 @@ this time will create the same freq array but will make accumulation to the freq
         | index | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
         | --- | --- | --- | --- | --- | --- | --- | --- |
         | value | 3 |  | 5 | 7 |  | 9 | 9 |
-    - i =1 
+    - **i =1** 
     nums[i] = 5 & freq[nums[i]] = 2
     output[2 -1] = 1;
         
@@ -147,7 +146,7 @@ this time will create the same freq array but will make accumulation to the freq
         | index | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
         | --- | --- | --- | --- | --- | --- | --- | --- |
         | value | 3 | 5 | 5 | 7 |  | 9 | 9 |
-    - i = 0
+    - **i = 0**
     nums[i] = 9 & freq[nums[i]] = 5
     output[5 -1] = 4;
         
@@ -156,4 +155,5 @@ this time will create the same freq array but will make accumulation to the freq
         | --- | --- | --- | --- | --- | --- | --- | --- |
         | value | 3 | 5 | 5 | 7 | 9 | 9 | 9 |
         
----
+    
+    ---
