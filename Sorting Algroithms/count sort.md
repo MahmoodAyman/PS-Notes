@@ -90,9 +90,10 @@ this time will create the same freq array but will make accumulation to the freq
 0  1  2  3  4  5  6
 
 9  5  3  9  5  9  7
+
     - loop on the array starting from last element : i = 6
     output[freq[nums[i]] - 1] 
-    nums[i] = 7 & freq[nums[i] = 4 
+    nums[i] = 7 & freq[nums[i]] = 4 
     then output[4-1] = output[3];
     this will make element (7) at the index (3) of the output array!
         
