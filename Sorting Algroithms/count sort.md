@@ -88,6 +88,7 @@ this time will create the same freq array but will make accumulation to the freq
 9 has freq 3 starting at position 7 . // in zero-based it will be 6
 - array nums =  
 0  1  2  3  4  5  6
+
 9  5  3  9  5  9  7
     - loop on the array starting from last element : i = 6
     output[freq[nums[i]] - 1] 
